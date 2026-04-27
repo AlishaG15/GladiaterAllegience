@@ -1,11 +1,11 @@
-#include <Arduino.h>
+xx#include <Arduino.h>
 
 #include <ESP32Servo.h>
 
 Servo myservo;  // create servo object to control a servo
 // 16 servo objects can be created on the ESP32
 
-int pos = 60;    // variable to store the servo position
+int pos = 90;    // variable to store the servo position
 // Recommended PWM GPIO pins on the ESP32 include 2,4,12-19,21-23,25-27,32-33 
 // Possible PWM GPIO pins on the ESP32-S2: 0(used by on-board button),1-17,18(used by on-board LED),19-21,26,33-42
 // Possible PWM GPIO pins on the ESP32-S3: 0(used by on-board button),1-21,35-45,47,48(used by on-board LED)
@@ -31,6 +31,8 @@ void setup() {
   pinMode(ledPin, OUTPUT);
   digitalWrite(ledPin, LOW);
 
+  myservo.write(104);
+
 }
 
 void loop() {
@@ -45,12 +47,17 @@ void loop() {
 	// 	myservo.write(pos/10);    // tell servo to go to position in variable 'pos'
 	// 	delay(10);             // waits 15ms for the servo to reach the position
 	// }
-  myservo.write(0);
-  delay(1000);
-  myservo.write(90);
-  delay(1000);
-  myservo.write(180);
-  delay(1000);
+  delay(5000);
+  myservo.write(72);
+  Serial.println("Closed degrees");
+  delay(10000);
+  myservo.write(104);
+  Serial.println("Open degrees");
+  delay(2000);
+  // myservo.write(90);
+  // delay(1000);
+  // myservo.write(180);
+  // delay(1000);
   
   digitalWrite(ledPin, HIGH);
   // Serial.println("I'm alive");
