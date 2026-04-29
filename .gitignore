@@ -1,0 +1,26 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# KiCad backup files (auto-generated, not source)
+*-backups/
+
+# KiCad lock files
+*.lck
+~*.lck
+~_autosave-*
+
+# KiCad caches
+fp-info-cache
+*.kicad_prl
+
+# Loose zip archives (source folders are tracked instead)
+/*.zip
+/TransmitterModule/*.zip
+
+# Arduino build artifacts
+build/
+*.elf
+*.hex
+*.bin
