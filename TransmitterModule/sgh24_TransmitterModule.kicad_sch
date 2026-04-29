@@ -1649,7 +1649,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "NRF24L01_:NRF24L01_"
+		(symbol "RF:NRF24L01_Breakout"
 			(pin_names
 				(offset 1.016)
 			)
@@ -1657,44 +1657,36 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "U"
-				(at -12.7179 12.7179 0)
+				(at -8.89 12.7 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left bottom)
+					(justify left)
 				)
 			)
-			(property "Value" "NRF24L01_"
-				(at 0 0 0)
+			(property "Value" "NRF24L01_Breakout"
+				(at 3.81 12.7 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify bottom)
+					(justify left)
 				)
 			)
-			(property "Footprint" "NRF24L01_:NRF24L01-PCB-AERIAL"
-				(at 0 0 0)
+			(property "Footprint" "RF_Module:nRF24L01_Breakout"
+				(at 3.81 15.24 0)
 				(effects
 					(font
 						(size 1.27 1.27)
+						(italic yes)
 					)
-					(justify bottom)
+					(justify left)
 					(hide yes)
 				)
 			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
+			(property "Datasheet" "http://www.nordicsemi.com/eng/content/download/2730/34105/file/nRF24L01_Product_Specification_v2_0.pdf"
+				(at 0 -2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1702,90 +1694,37 @@
 					(hide yes)
 				)
 			)
-			(property "MF" "Nordic Semiconductor"
+			(property "Description" "Ultra low power 2.4GHz RF Transceiver, Carrier PCB"
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify bottom)
 					(hide yes)
 				)
 			)
-			(property "Description_1" "IC RF TxRx Only General ISM > 1GHz  2.4GHz 20-VFQFN Exposed Pad"
+			(property "ki_keywords" "Low Power RF Transceiver breakout carrier"
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify bottom)
 					(hide yes)
 				)
 			)
-			(property "Package" "QFN-20 Nordic Semiconductor"
+			(property "ki_fp_filters" "nRF24L01*Breakout*"
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify bottom)
 					(hide yes)
 				)
 			)
-			(property "Price" "None"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "SnapEDA_Link" "https://www.snapeda.com/parts/NRF24L01+/Nordic+Power/view-part/?ref=snap"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "MP" "NRF24L01+"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Availability" "In Stock"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Check_prices" "https://www.snapeda.com/parts/NRF24L01+/Nordic+Power/view-part/?ref=eda"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(symbol "NRF24L01__0_0"
+			(symbol "NRF24L01_Breakout_0_1"
 				(rectangle
-					(start -12.7 -10.16)
-					(end 12.7 10.16)
+					(start -8.89 11.43)
+					(end 8.89 -11.43)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -1794,146 +1733,207 @@
 						(type background)
 					)
 				)
-				(pin power_in line
-					(at -17.78 7.62 0)
-					(length 5.08)
-					(name "GND"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
+				(arc
+					(start 3.175 5.08)
+					(mid 6.453 4.548)
+					(end 6.985 1.27)
+					(stroke
+						(width 0.254)
+						(type default)
 					)
-					(number "P$1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
+					(fill
+						(type none)
 					)
 				)
-				(pin power_in line
-					(at -17.78 2.54 0)
-					(length 5.08)
-					(name "VCC"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
+				(circle
+					(center 4.445 2.54)
+					(radius 0.635)
+					(stroke
+						(width 0.254)
+						(type default)
 					)
-					(number "P$2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
+					(fill
+						(type outline)
 					)
 				)
-				(pin bidirectional line
-					(at -17.78 -2.54 0)
-					(length 5.08)
-					(name "CE"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
+				(polyline
+					(pts
+						(xy 4.445 1.905) (xy 4.445 -1.27)
 					)
-					(number "P$3"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
-				(pin bidirectional line
-					(at -17.78 -7.62 0)
-					(length 5.08)
-					(name "CSN"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
+				(arc
+					(start 3.81 4.445)
+					(mid 5.8835 3.9785)
+					(end 6.35 1.905)
+					(stroke
+						(width 0.254)
+						(type default)
 					)
-					(number "P$4"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
+					(fill
+						(type none)
 					)
 				)
-				(pin bidirectional line
-					(at 17.78 7.62 180)
-					(length 5.08)
-					(name "SCK"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
+				(arc
+					(start 4.445 3.81)
+					(mid 5.3558 3.4508)
+					(end 5.715 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
 					)
-					(number "P$5"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
+					(fill
+						(type none)
 					)
 				)
-				(pin bidirectional line
-					(at 17.78 2.54 180)
-					(length 5.08)
+			)
+			(symbol "NRF24L01_Breakout_1_1"
+				(pin input line
+					(at -12.7 7.62 0)
+					(length 3.81)
 					(name "MOSI"
 						(effects
 							(font
-								(size 1.016 1.016)
+								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "P$6"
+					(number "6"
 						(effects
 							(font
-								(size 1.016 1.016)
+								(size 1.27 1.27)
 							)
 						)
 					)
 				)
-				(pin bidirectional line
-					(at 17.78 -2.54 180)
-					(length 5.08)
+				(pin output line
+					(at -12.7 5.08 0)
+					(length 3.81)
 					(name "MISO"
 						(effects
 							(font
-								(size 1.016 1.016)
+								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "P$7"
+					(number "7"
 						(effects
 							(font
-								(size 1.016 1.016)
+								(size 1.27 1.27)
 							)
 						)
 					)
 				)
-				(pin bidirectional line
-					(at 17.78 -7.62 180)
-					(length 5.08)
-					(name "IRQ"
+				(pin input clock
+					(at -12.7 2.54 0)
+					(length 3.81)
+					(name "SCK"
 						(effects
 							(font
-								(size 1.016 1.016)
+								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "P$8"
+					(number "5"
 						(effects
 							(font
-								(size 1.016 1.016)
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -12.7 0 0)
+					(length 3.81)
+					(name "~{CSN}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -12.7 -5.08 0)
+					(length 3.81)
+					(name "CE"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -12.7 -7.62 0)
+					(length 3.81)
+					(name "IRQ"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 15.24 270)
+					(length 3.81)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -15.24 90)
+					(length 3.81)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
 							)
 						)
 					)
@@ -2317,19 +2317,13 @@
 		(color 0 0 0 0)
 		(uuid "629c16b4-237b-4cf4-9bd8-87f55ccda233")
 	)
-	(junction
-		(at 204.47 44.45)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "69f269d7-61d5-43d5-94a1-b96622d9bb0f")
+	(no_connect
+		(at 222.25 54.61)
+		(uuid "1ca7ea6c-7b13-4ee2-9586-f159b0c1bef7")
 	)
 	(no_connect
 		(at 203.2 77.47)
 		(uuid "2c7e8292-a389-4558-b20d-a71dff174fad")
-	)
-	(no_connect
-		(at 252.73 54.61)
-		(uuid "5800a000-fc2e-4a8e-96a4-f66565ab2a23")
 	)
 	(no_connect
 		(at 135.89 87.63)
@@ -2346,16 +2340,6 @@
 	(no_connect
 		(at 238.76 77.47)
 		(uuid "ec63f693-88b4-40cc-aaae-fa44e69df00d")
-	)
-	(wire
-		(pts
-			(xy 191.77 39.37) (xy 191.77 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1f142b8f-b1c5-4289-af7d-b7494ac71489")
 	)
 	(wire
 		(pts
@@ -2509,6 +2493,16 @@
 	)
 	(wire
 		(pts
+			(xy 215.9 39.37) (xy 226.06 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5247e005-23bc-4251-95ad-b97a11ea0dd9")
+	)
+	(wire
+		(pts
 			(xy 121.92 35.56) (xy 127 35.56)
 		)
 		(stroke
@@ -2579,6 +2573,16 @@
 	)
 	(wire
 		(pts
+			(xy 217.17 41.91) (xy 226.06 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e957f4e-b4bf-48ef-8385-e42c736de312")
+	)
+	(wire
+		(pts
 			(xy 203.2 69.85) (xy 213.36 69.85)
 		)
 		(stroke
@@ -2586,16 +2590,6 @@
 			(type default)
 		)
 		(uuid "6f15d511-c7eb-46c0-a8b1-2ec266b842e4")
-	)
-	(wire
-		(pts
-			(xy 191.77 39.37) (xy 217.17 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "80fdc8b6-00eb-4314-854e-88a0cb33d59c")
 	)
 	(wire
 		(pts
@@ -2619,6 +2613,16 @@
 	)
 	(wire
 		(pts
+			(xy 219.71 44.45) (xy 226.06 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e7db2fa-57e6-45b2-931d-ed948b930163")
+	)
+	(wire
+		(pts
 			(xy 105.41 83.82) (xy 100.33 83.82)
 		)
 		(stroke
@@ -2626,6 +2630,16 @@
 			(type default)
 		)
 		(uuid "97cf9976-615e-42c6-8533-321c411d6ab8")
+	)
+	(wire
+		(pts
+			(xy 222.25 46.99) (xy 226.06 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99e8e4ea-e660-4a2a-99f2-144e2094b94c")
 	)
 	(wire
 		(pts
@@ -2659,16 +2673,6 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 44.45) (xy 204.47 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bd5d7003-eef8-47f9-938a-eb4a760d42e3")
-	)
-	(wire
-		(pts
 			(xy 121.92 58.42) (xy 121.92 62.23)
 		)
 		(stroke
@@ -2686,6 +2690,16 @@
 			(type default)
 		)
 		(uuid "cc862524-2e47-418f-94d1-865865690038")
+	)
+	(wire
+		(pts
+			(xy 222.25 54.61) (xy 226.06 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce76c476-db2f-41ee-b2f2-98872173e47e")
 	)
 	(wire
 		(pts
@@ -2709,6 +2723,16 @@
 	)
 	(wire
 		(pts
+			(xy 238.76 62.23) (xy 238.76 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5e25520-d2fc-479b-8884-4a94513acc95")
+	)
+	(wire
+		(pts
 			(xy 162.56 110.49) (xy 167.64 110.49)
 		)
 		(stroke
@@ -2729,7 +2753,7 @@
 	)
 	(wire
 		(pts
-			(xy 204.47 52.07) (xy 204.47 54.61)
+			(xy 254 39.37) (xy 254 41.91)
 		)
 		(stroke
 			(width 0)
@@ -2759,13 +2783,13 @@
 	)
 	(wire
 		(pts
-			(xy 204.47 44.45) (xy 217.17 44.45)
+			(xy 238.76 31.75) (xy 254 31.75)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "eadbadef-41fc-4543-8f47-ef929b223747")
+		(uuid "e9adac15-984e-4b43-85fb-a33631d86ae1")
 	)
 	(wire
 		(pts
@@ -2777,15 +2801,15 @@
 		)
 		(uuid "ee4f1a55-b4a6-4be2-978c-3d1851e08109")
 	)
-	(label "CE"
-		(at 217.17 49.53 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
+	(wire
+		(pts
+			(xy 220.98 52.07) (xy 226.06 52.07)
 		)
-		(uuid "0eb04858-b736-4efb-8bb5-e9ec7116fcaa")
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f56c519f-53b3-4e9c-8119-a6bf7772ccd3")
 	)
 	(label "CE"
 		(at 134.62 77.47 180)
@@ -2827,26 +2851,6 @@
 		)
 		(uuid "1fdd0b53-10d3-4b1b-b100-86bdc4a89608")
 	)
-	(label "SCK"
-		(at 252.73 39.37 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "3ddafe84-3306-41c7-b475-5d3b733e1f92")
-	)
-	(label "VCC"
-		(at 201.93 44.45 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "44a06d01-d910-4b67-943a-636458c66368")
-	)
 	(label "LED_ON1"
 		(at 134.62 82.55 180)
 		(effects
@@ -2887,15 +2891,25 @@
 		)
 		(uuid "625a479a-fe01-4644-ac73-4c899fca0eb8")
 	)
-	(label "MISO"
-		(at 252.73 49.53 0)
+	(label "MOSI"
+		(at 215.9 39.37 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "6855bfd0-5cdd-49ce-997c-bd516e7f8325")
+		(uuid "6a630047-7b23-4208-b05c-fa3a53169bf0")
+	)
+	(label "VCC"
+		(at 241.3 31.75 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7838d93c-f109-4768-9365-2a0fc40de883")
 	)
 	(label "SCK"
 		(at 209.55 82.55 0)
@@ -2906,16 +2920,6 @@
 			(justify left bottom)
 		)
 		(uuid "8744fdf7-b7df-4cd7-9afa-5f3986d0b8af")
-	)
-	(label "MOSI"
-		(at 252.73 44.45 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "8d1fa0b2-e04b-410d-bfe5-62044f40ca0d")
 	)
 	(label "VCC"
 		(at 205.74 69.85 0)
@@ -2936,6 +2940,16 @@
 			(justify left bottom)
 		)
 		(uuid "a9c7e49a-587f-488a-9e40-e0ec18df48aa")
+	)
+	(label "CSN"
+		(at 222.25 46.99 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ac67b7ea-9ff0-44ce-a2e9-aef88c242918")
 	)
 	(label "LED_ON1"
 		(at 127 35.56 0)
@@ -2967,25 +2981,35 @@
 		)
 		(uuid "b0dadb80-b116-4e17-820b-4d0c8856c310")
 	)
-	(label "CSN"
-		(at 217.17 54.61 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "c758be34-97f7-4b64-acdf-7b4190c000f0")
-	)
-	(label "IRQ"
-		(at 252.73 54.61 0)
+	(label "SCK"
+		(at 219.71 44.45 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "d395c4b5-b63c-471c-9794-604bd73ac717")
+		(uuid "b90d0723-68e3-4aff-9689-c989d96cc7c7")
+	)
+	(label "MISO"
+		(at 217.17 41.91 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c38e6bd8-0530-4204-b4b6-e11922f487c9")
+	)
+	(label "CE"
+		(at 220.98 52.07 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e300a630-8ca1-4c3b-b0ff-7e1988149347")
 	)
 	(label "LED_ON2"
 		(at 134.62 85.09 180)
@@ -3881,173 +3905,6 @@
 		)
 	)
 	(symbol
-		(lib_id "NRF24L01_:NRF24L01_")
-		(at 234.95 46.99 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4f794d8f-d165-48b5-8d99-9c253da878bc")
-		(property "Reference" "U1"
-			(at 234.95 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "NRF24L01_"
-			(at 234.95 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "RF_Module:nRF24L01_Breakout"
-			(at 234.95 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 234.95 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 234.95 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MF" "Nordic Semiconductor"
-			(at 234.95 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Description_1" "IC RF TxRx Only General ISM > 1GHz  2.4GHz 20-VFQFN Exposed Pad"
-			(at 234.95 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Package" "QFN-20 Nordic Semiconductor"
-			(at 234.95 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Price" "None"
-			(at 234.95 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/NRF24L01+/Nordic+Power/view-part/?ref=snap"
-			(at 234.95 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MP" "NRF24L01+"
-			(at 234.95 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Availability" "In Stock"
-			(at 234.95 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Check_prices" "https://www.snapeda.com/parts/NRF24L01+/Nordic+Power/view-part/?ref=eda"
-			(at 234.95 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(pin "P$1"
-			(uuid "a65bdc34-8a48-4c4e-9f86-589c37c678dc")
-		)
-		(pin "P$5"
-			(uuid "6b7fd828-82f0-4557-8b76-2f28dc5dc828")
-		)
-		(pin "P$6"
-			(uuid "fec3f37c-c38b-4f92-81a4-b03f63492799")
-		)
-		(pin "P$7"
-			(uuid "7a55fa5a-753a-4c0d-b78d-eb1221910d0d")
-		)
-		(pin "P$8"
-			(uuid "ed7b8113-e8b7-4c27-aef7-01cbe5e423a2")
-		)
-		(pin "P$2"
-			(uuid "843b1e78-f7ea-4ea1-94b7-6de14fbe76ed")
-		)
-		(pin "P$3"
-			(uuid "0d0bbb1f-4a13-4360-a395-5b5876f471b0")
-		)
-		(pin "P$4"
-			(uuid "8dee99ce-435f-495a-af7f-7765e7010a50")
-		)
-		(instances
-			(project ""
-				(path "/37f41d76-882f-4a95-a051-6db61cbf3c6e"
-					(reference "U1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Mechanical:MountingHole")
 		(at 83.82 45.72 0)
 		(unit 1)
@@ -4393,7 +4250,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 204.47 48.26 0)
+		(at 254 35.56 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4402,7 +4259,7 @@
 		(fields_autoplaced yes)
 		(uuid "a72b502b-e752-424c-ab4e-602cd8d33fae")
 		(property "Reference" "C5"
-			(at 208.28 46.9899 0)
+			(at 257.81 34.2899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4411,7 +4268,7 @@
 			)
 		)
 		(property "Value" "100u"
-			(at 208.28 49.5299 0)
+			(at 257.81 36.8299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4420,7 +4277,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:C_Axial_L3.8mm_D2.6mm_P7.50mm_Horizontal"
-			(at 205.4352 52.07 0)
+			(at 254.9652 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4429,7 +4286,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 204.47 48.26 0)
+			(at 254 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4438,7 +4295,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 204.47 48.26 0)
+			(at 254 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4598,7 +4455,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 204.47 54.61 0)
+		(at 254 41.91 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4607,7 +4464,7 @@
 		(fields_autoplaced yes)
 		(uuid "ba985415-6e08-4a68-bf6f-b59ef7242780")
 		(property "Reference" "#PWR012"
-			(at 204.47 60.96 0)
+			(at 254 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4616,7 +4473,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 204.47 59.69 0)
+			(at 254 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4624,7 +4481,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 204.47 54.61 0)
+			(at 254 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4633,7 +4490,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 204.47 54.61 0)
+			(at 254 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4642,7 +4499,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 204.47 54.61 0)
+			(at 254 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4723,6 +4580,95 @@
 			(project ""
 				(path "/37f41d76-882f-4a95-a051-6db61cbf3c6e"
 					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RF:NRF24L01_Breakout")
+		(at 238.76 46.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c1f2f8d5-eca5-4c07-a250-2ba7912b0176")
+		(property "Reference" "U2"
+			(at 248.92 45.7199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "NRF24L01_Breakout"
+			(at 249.174 43.688 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "RF_Module:nRF24L01_Breakout"
+			(at 242.57 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.nordicsemi.com/eng/content/download/2730/34105/file/nRF24L01_Product_Specification_v2_0.pdf"
+			(at 238.76 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Ultra low power 2.4GHz RF Transceiver, Carrier PCB"
+			(at 238.76 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "4896e00a-208f-4658-a937-93dff4440698")
+		)
+		(pin "4"
+			(uuid "645673eb-9d70-4dac-bece-46046900585e")
+		)
+		(pin "3"
+			(uuid "c1ef6358-d822-45b2-97e8-38d1abbf9da1")
+		)
+		(pin "8"
+			(uuid "cd426a52-4d7f-41a5-8c02-ae024a5609ca")
+		)
+		(pin "2"
+			(uuid "e5c688f0-a637-4afb-9cbd-9147ad20c4c9")
+		)
+		(pin "6"
+			(uuid "bfff1637-229e-4b5c-bc79-0e43a82644bc")
+		)
+		(pin "1"
+			(uuid "26d28b84-1f8a-483d-91fd-20bd9dddf62c")
+		)
+		(pin "7"
+			(uuid "303b554e-e1ec-4302-909a-bcf3a7f3dda3")
+		)
+		(instances
+			(project ""
+				(path "/37f41d76-882f-4a95-a051-6db61cbf3c6e"
+					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -5207,7 +5153,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 191.77 44.45 0)
+		(at 238.76 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5216,7 +5162,7 @@
 		(fields_autoplaced yes)
 		(uuid "ec0d96c3-9138-4622-b049-43216caeaf64")
 		(property "Reference" "#PWR04"
-			(at 191.77 50.8 0)
+			(at 238.76 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5225,7 +5171,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 191.77 49.53 0)
+			(at 238.76 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5233,7 +5179,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 191.77 44.45 0)
+			(at 238.76 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5242,7 +5188,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 191.77 44.45 0)
+			(at 238.76 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5251,7 +5197,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 191.77 44.45 0)
+			(at 238.76 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)

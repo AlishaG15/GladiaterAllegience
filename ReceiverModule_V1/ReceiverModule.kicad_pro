@@ -123,7 +123,7 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.2,
+        "min_clearance": 0.0,
         "min_connection": 0.0,
         "min_copper_edge_clearance": 0.5,
         "min_groove_width": 0.0,
@@ -136,7 +136,7 @@
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.5,
+        "min_track_width": 0.0,
         "min_via_annular_width": 0.1,
         "min_via_diameter": 0.5,
         "solder_mask_to_copper_clearance": 0.0,
@@ -419,6 +419,7 @@
       "bus_entry_needed": "error",
       "bus_to_bus_conflict": "error",
       "bus_to_net_conflict": "error",
+      "conflicting_netclasses": "error",
       "different_unit_footprint": "error",
       "different_unit_net": "error",
       "duplicate_reference": "error",
@@ -465,8 +466,8 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "TransmitterModule.kicad_pro",
-    "version": 3
+    "filename": "ReceiverModule.kicad_pro",
+    "version": 1
   },
   "net_settings": {
     "classes": [
@@ -481,7 +482,6 @@
         "microvia_drill": 0.1,
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
         "via_diameter": 0.6,
@@ -490,7 +490,7 @@
       }
     ],
     "meta": {
-      "version": 4
+      "version": 3
     },
     "net_colors": null,
     "netclass_assignments": null,
@@ -501,7 +501,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "TransmitterModule/",
+      "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
